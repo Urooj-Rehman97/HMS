@@ -1,6 +1,6 @@
 /** Central configuration + enum lists. Values mirror the server's Mongoose enums exactly. */
 /** Base URL of the Express API (set VITE_API_URL in .env). */
-export const API_URL = (import.meta.env.VITE_API_URL ?? 'http://localhost:5000/api').replace(/\/$/, '');
+export const API_URL = (import.meta.env.VITE_API_URL ?? 'https://hmsbackend-z1w5.onrender.com/api').replace(/\/$/, '');
 /** Origin that serves uploaded files such as /uploads/gallery/xyz.jpg */
 export const FILES_URL = (import.meta.env.VITE_FILES_URL ?? API_URL.replace(/\/api$/, '')).replace(/\/$/, '');
 export const ROLE_LABEL = { admin: 'Admin', manager: 'Manager', receptionist: 'Receptionist', housekeeping: 'Housekeeping', guest: 'Guest' };

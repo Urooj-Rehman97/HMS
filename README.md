@@ -32,7 +32,7 @@ LuxuryStay/
 ├── frontend/   React + Vite client (src/pages, components, routes, services, context, hooks)
 └── server/     Express API (src/routes, controllers, services, models, middleware, validations, uploads, tests)
 
-## Prerequisites
+## Prerequisites 
 
 - Node.js (current LTS) and npm
 - MongoDB (local or MongoDB Atlas)
