@@ -1,0 +1,27 @@
+/* ------------------------------------------------------------------ */
+/* Design tokens. RGB channels so Tailwind opacity modifiers still work. */
+/* Dark is the default; light is applied via <html data-theme="light">.  */
+/* `.dark-scope` keeps image-led sections (hero, overlays) dark in both   */
+/* themes so text on photography always stays legible.                    */
+/* ------------------------------------------------------------------ */
+:root, .dark-scope {
+  --ink: 7 7 7; --ink-1: 11 13 15; --ink-2: 17 19 21; --ink-3: 21 23 25;
+  --cream: 245 242 234; --mist: 189 189 189; --muted: 119 123 125;
+  --gold: 217 163 95; --gold-deep: 185 138 75; --gold-soft: 228 201 138; --gold-ink: 217 163 95;
+  --wash: 255 255 255;
+  --field-bg: #121212; --field-border: rgb(255 255 255 / .10);
+  --glass-bg: rgb(255 255 255 / .04); --glass-border: rgb(255 255 255 / .08); --glass-blur: 18px; --glass-shadow: none;
+  --glass-strong-bg: rgb(7 7 7 / .70); --glass-strong-border: rgb(255 255 255 / .10); --glass-strong-blur: 24px;
+  --icon: 217 163 95;
+}
+html[data-theme='light'] {
+  --ink: 255 255 255; --ink-1: 250 250 250; --ink-2: 243 243 243; --ink-3: 237 237 237;
+  --cream: 17 17 17; --mist: 102 102 102; --muted: 118 118 118;
+  --gold: 212 175 55; --gold-deep: 176 141 34; --gold-soft: 226 196 98; --gold-ink: 138 109 18;
+  --wash: 17 17 17;
+  --field-bg: #ffffff; --field-border: #d4d4d4;
+  --glass-bg: #ffffff; --glass-border: #e5e5e5; --glass-blur: 0px; --glass-shadow: 0 1px 2px rgb(0 0 0 / .04), 0 6px 20px rgb(0 0 0 / .04);
+  --glass-strong-bg: rgb(255 255 255 / .94); --glass-strong-border: #e5e5e5; --glass-strong-blur: 12px;
+  --icon: 17 17 17;
+}
+.dark-scope { color: rgb(var(--cream)); color-scheme: dark; }

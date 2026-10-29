@@ -1,0 +1,33 @@
+{
+  "name": "veloria-hms-server",
+  "version": "1.0.0",
+  "description": "Backend API for LuxuryStay Hotel Management System",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.mjs",
+    "start": "node src/server.mjs",
+    "create-admin": "node scripts/createAdmin.mjs",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --runInBand",
+    "smoke": "node scripts/smokeTest.mjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.3",
+    "morgan": "^1.12.1",
+    "multer": "^2.4.0",
+    "nodemailer": "^10.0.12"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "jest": "^30.5.2",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.0"
+  }
+}

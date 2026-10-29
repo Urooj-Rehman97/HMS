@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.local
+
+uploads/gallery/*
+uploads/profiles/*
+
+!uploads/gallery/.gitkeep
+!uploads/profiles/.gitkeep
+
+coverage/
+*.log
+.DS_Store
